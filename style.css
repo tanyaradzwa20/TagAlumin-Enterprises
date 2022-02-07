@@ -831,7 +831,8 @@ form input {
     }
 
         .btn-load:hover{
-            text-decoration: none;
+            text-decoration: none!important;
+            color:red
         }
 .kk{
     width: 100%;
