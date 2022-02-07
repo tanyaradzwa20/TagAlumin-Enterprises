@@ -12,10 +12,8 @@ body{
     font-family: 'Raleway';
     scroll-behavior: smooth!important;
 }
-.header .container{
-    width: 100%;
-}
-.header{display: flex;align-items: center;justify-content: space-between;position: fixed;background-color: white;width: 100%;z-index: 10;;}
+
+.header{position: fixed;background-color: white;width: 100%;z-index: 10;display: flex;align-items: center;justify-content: space-between;padding: 0 50px ;}
     .header ul{float:right;line-height: 100px;display: flex;}
        .header a{padding:0 25px;transition:0.4s;font-size: 20px;text-decoration: none;color:#194a36;font-weight:bold;    transition: 2s;}
        .header a:hover{color: black;}
@@ -23,8 +21,8 @@ body{
     .show-menu-btn{float: right;line-height: 100px;}
     .header input{position: absolute;visibility: hidden;z-index: -1111;}
 .logo{
-    width: 200px;
-    height: 100px;
+    /* width: 200px; */
+    height: 65px;
     object-fit: cover;
 }
 
@@ -67,7 +65,7 @@ body{
 
 .second{
     padding-right: 130px;
-    padding-top: 80px;
+    padding-top: 35px;
   
 }
 .billboard a:hover{
@@ -118,8 +116,9 @@ body{
 }
 .explore-more{
     background-color: #F5F5F5;
-    padding: 150px 100px 190px 180px;
+    padding: 165px 100px 180px 180px;
 }
+
 .explore-img{
     position: relative;
 }
@@ -242,14 +241,14 @@ form input{
 
 }
 .form-inner{
-    background-color: #F8FBFF;
+    background-color: rgb(250, 255, 248);
     padding: 40px 60px;
 
 }
 
 .contact-form input::placeholder{
     color: #194a36;
-    background-color: #F8FBFF;
+    background-color: rgb(250, 255, 248);
     padding: 20px 0!important;
 
 }
@@ -276,7 +275,7 @@ form button{
 }
 
 form button:hover{
-    background-color: #F8FBFF;;
+    background-color: rgb(250, 255, 248);;
     color: #194a36; 
     border: 2px solid #194a36;  
 }
@@ -354,7 +353,6 @@ footer i{
 }
 
 
-
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
         .header ul{position:fixed;width: 100%;height: 100vh;background-color:#194a36;right:-100% ;top: 0;text-align: center;padding: 100px 0;line-height: normal;transition: 0.7s;display: flex;flex-direction: column;margin: 0;}
@@ -362,10 +360,11 @@ footer i{
         .show-menu-btn, .hide-menu-btn{display: block;color: #194a36;}
         .hide-menu-btn{position: absolute;top: 30px;right: 25px;color: white;}
        .header input:checked ~ .menu{right: 0;z-index: 123;}
+       .show-menu-btn{margin-left: 80px;}
 
 .header{
   height: 100px;
-  padding: 0 18px 0 0;
+  padding: 0 25px;
 }
 
 .hero{
@@ -463,7 +462,7 @@ form input {
 .contact-form h2{
     font-size: 35px;
 }
-.logo{width:150px}
+/* .logo{width:150px} */
 
 }
 
@@ -482,7 +481,7 @@ form input {
 
 .header{
     height: 100px;
-    padding: 0 25px 0 0;
+    padding: 0 25px ;
   }
 
   .header a{
@@ -502,9 +501,9 @@ form input {
     padding-top: 28px;
 }
 
-.logo {
+/* .logo {
     width: 150px;
-}
+} */
 
 .billboard h1 {
     font-size: 25px;
@@ -718,6 +717,9 @@ form input {
 .gallery{
     margin-top: 60px;
 }
+.billboard p{
+    margin-bottom: 0;
+}
 }
 
 
@@ -798,7 +800,7 @@ form input {
     display: flex;
     width: 200px;
     height: 2px;
-    background: #fff;
+    background: #194a36;
     content: '';
     margin: 15px AUTO;
     animation: moveInLeft .4s ease-out;}
