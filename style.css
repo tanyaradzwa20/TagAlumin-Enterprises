@@ -827,12 +827,12 @@ form input {
         transition: .3s;
         border: 2px solid #194a36;
         margin: 30px 0;
-        font-weight: bold;
     }
 
         .btn-load:hover{
             text-decoration: none!important;
-            color:red
+            color:white;
+            background-color: #194a36;
         }
 .kk{
     width: 100%;

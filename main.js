@@ -1,4 +1,4 @@
-// load more button
+// // load more button
 var numberOfItems=6;
 $('#myList .col-md-4:lt('+numberOfItems+')').fadeIn();
 
